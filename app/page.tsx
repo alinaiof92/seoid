@@ -1,7 +1,8 @@
+```tsx
 // app/page.tsx
 import Link from "next/link";
 
-const CALENDLY_URL = "https://calendly.com/seoid/new-meeting"; // <-- ändern
+const CALENDLY_URL = "https://calendly.com/seoid/new-meeting";
 
 export default function HomePage() {
   return (
@@ -22,7 +23,7 @@ export default function HomePage() {
 
         <nav className="hidden items-center gap-6 text-sm text-white/70 md:flex">
           <a className="hover:text-white" href="#loesungen">
-            Lösungen
+            Leistungen
           </a>
           <a className="hover:text-white" href="#ablauf">
             Ablauf
@@ -37,7 +38,7 @@ export default function HomePage() {
 
         <div className="flex items-center gap-3">
           <a
-            href=https://calendly.com/seoid/new-meeting
+            href={CALENDLY_URL}
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center justify-center rounded-2xl bg-[#2EE9FF] px-4 py-2 text-sm font-semibold text-[#071225] shadow-sm transition hover:brightness-110"
@@ -53,22 +54,24 @@ export default function HomePage() {
           <div>
             <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/70">
               <span className="h-1.5 w-1.5 rounded-full bg-[#2EE9FF]" />
-              AI & Automations für KMU
+              AI • Automations • Websites • Marketing für KMU
             </div>
 
             <h1 className="mt-5 text-4xl font-semibold tracking-tight md:text-5xl">
-              Wir automatisieren wiederkehrende Arbeit in deinem KMU – in{" "}
-              <span className="text-[#2EE9FF]">14 Tagen</span>.
+              Wir bauen Systeme, die{" "}
+              <span className="text-[#2EE9FF]">Leads bringen</span> und Prozesse{" "}
+              <span className="text-[#2EE9FF]">automatisieren</span> – in 14 Tagen.
             </h1>
 
             <p className="mt-4 max-w-xl text-base leading-7 text-white/70">
-              AI-Workflows, E-Mail/CRM-Automationen, Angebots- & Terminprozesse:
-              sauber gebaut, messbar, wartbar – ohne Tool-Chaos.
+              Website + Marketing + Automationen als ein System: Leads kommen rein,
+              werden organisiert, automatisch nachverfolgt und in Termine/Umsatz
+              verwandelt – messbar und stabil.
             </p>
 
             <div className="mt-7 flex flex-wrap gap-3">
               <a
-                href=https://calendly.com/seoid/new-meeting
+                href={CALENDLY_URL}
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center justify-center rounded-2xl bg-[#2EE9FF] px-5 py-3 text-sm font-semibold text-[#071225] shadow-sm transition hover:brightness-110"
@@ -96,7 +99,8 @@ export default function HomePage() {
               <div>
                 <p className="text-sm font-semibold text-white/90">Was du bekommst</p>
                 <p className="mt-1 text-sm text-white/60">
-                  Ein stabiles Core-System statt 10 halber Experimente.
+                  Ein End-to-End System statt einzelner Tools: Website, Leads, CRM
+                  und Automationen greifen sauber ineinander.
                 </p>
               </div>
               <div className="rounded-2xl border border-white/10 bg-[#2EE9FF]/10 px-3 py-1 text-xs text-[#2EE9FF]">
@@ -107,16 +111,16 @@ export default function HomePage() {
             <div className="mt-6 grid gap-3">
               {[
                 {
-                  title: "Automation-Blueprint",
-                  desc: "Prozessfluss, Datenpunkte, Tools, Verantwortlichkeiten.",
+                  title: "Website & Conversion Setup",
+                  desc: "Landingpage/Website, CTA, Tracking-Setup, schnelle Ladezeit.",
                 },
                 {
-                  title: "Build + Tests + Logging",
-                  desc: "Retries, Fehler-Alerts, Monitoring – damit es zuverlässig läuft.",
+                  title: "Lead-Flow & CRM Organisation",
+                  desc: "Formular/Ads → CRM → Routing → Aufgaben, Zuständigkeiten & Pipeline.",
                 },
                 {
-                  title: "Dokumentation & Übergabe",
-                  desc: "Damit dein Team es versteht und weiter nutzen kann.",
+                  title: "Automationen & Follow-ups",
+                  desc: "Termine, Angebote, Erinnerungen, E-Mail/WhatsApp/Slack – stabil und dokumentiert.",
                 },
               ].map((item) => (
                 <div
@@ -132,8 +136,8 @@ export default function HomePage() {
             <div className="mt-6 rounded-2xl border border-white/10 bg-white/5 p-4">
               <p className="text-sm font-semibold">Startpunkt</p>
               <p className="mt-1 text-sm text-white/60">
-                Wir wählen den einen Engpass mit dem höchsten ROI – dann bauen wir
-                exakt dafür.
+                Wir wählen den Engpass mit dem höchsten ROI – und bauen dafür ein
+                System, das dein Team täglich entlastet.
               </p>
             </div>
           </div>
@@ -144,45 +148,45 @@ export default function HomePage() {
       <section id="loesungen" className="mx-auto max-w-6xl px-6 py-16">
         <div className="flex items-end justify-between gap-6">
           <div>
-            <h2 className="text-2xl font-semibold tracking-tight">Was wir automatisieren</h2>
+            <h2 className="text-2xl font-semibold tracking-tight">Leistungen</h2>
             <p className="mt-2 max-w-2xl text-sm leading-6 text-white/60">
-              Wiederkehrende Arbeit wird zum System: weniger Handarbeit, weniger Fehler,
-              schnellere Reaktion – und klare Zuständigkeiten.
+              Wir liefern das komplette Setup: Website/LP, Lead-Generierung, CRM-Organisation
+              und Automationen – damit nichts liegen bleibt und dein Team schneller arbeitet.
             </p>
           </div>
         </div>
 
         <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           <Card
-            title="Lead-Automation"
+            title="Website & Funnel"
             bullets={[
-              "Formular/Ads → CRM",
-              "Routing an Owner",
-              "Follow-up Sequenzen",
+              "Landingpage/Website, die konvertiert",
+              "Formulare → Tracking → CRM",
+              "Calendly-CTA & Conversion Flow",
             ]}
           />
           <Card
-            title="Angebote & Dokumente"
+            title="Marketing & Leads"
             bullets={[
-              "Daten → Angebotsdraft",
-              "Freigabe-Flow",
-              "Versand + CRM Update",
+              "Meta/Google Setup (je nach Bedarf)",
+              "Retargeting & Follow-ups",
+              "Reportings & Optimierung",
             ]}
           />
           <Card
-            title="Termin & Support"
+            title="Automationen & Ops"
             bullets={[
-              "Bestätigung + Reminder",
-              "No-Show Reduktion",
-              "Ticket-Routing",
+              "Angebote/Dokumente automatisieren",
+              "Termin- & Reminder-Prozesse",
+              "Workflows, Freigaben, Notifications",
             ]}
           />
           <Card
-            title="Reporting & Monitoring"
+            title="CRM & Organisation"
             bullets={[
-              "Logs & Alerts",
-              "KPI-Dashboard",
-              "Stabilisierung",
+              "Lead-Routing & Pipeline",
+              "Aufgaben & Zuständigkeiten",
+              "Monitoring & Alerts",
             ]}
           />
         </div>
@@ -202,7 +206,7 @@ export default function HomePage() {
             <Step
               num="02"
               title="Build (7–14 Tage)"
-              desc="Automation bauen, testen, Logging & Fail-Safes einziehen."
+              desc="Wir setzen Website/Leadflow + Automationen um, testen alles und bauen Logging/Alerts."
             />
             <Step
               num="03"
@@ -213,10 +217,10 @@ export default function HomePage() {
 
           <div className="mt-8 flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-white/10 bg-[#071225]/40 p-5">
             <p className="text-sm text-white/70">
-              Fokus: <span className="text-white">1 Prozess</span> automatisieren, der sofort spürbar Zeit spart.
+              Fokus: <span className="text-white">1 System</span> bauen, das Leads organisiert und sofort Zeit spart.
             </p>
             <a
-              href=https://calendly.com/seoid/new-meeting
+              href={CALENDLY_URL}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center justify-center rounded-2xl bg-[#2EE9FF] px-5 py-3 text-sm font-semibold text-[#071225] shadow-sm transition hover:brightness-110"
@@ -231,21 +235,21 @@ export default function HomePage() {
       <section id="beispiele" className="mx-auto max-w-6xl px-6 py-16">
         <h2 className="text-2xl font-semibold tracking-tight">Beispiele</h2>
         <p className="mt-2 max-w-2xl text-sm leading-6 text-white/60">
-          Realistische Use-Cases, die in KMU schnell Wirkung zeigen – ohne Buzzword-Bingo.
+          Use-Cases, die in KMU schnell Wirkung zeigen – ohne Buzzword-Bingo.
         </p>
 
         <div className="mt-8 grid gap-4 lg:grid-cols-3">
           <Example
-            title="Lead in 60 Sekunden beim richtigen Mitarbeiter"
-            desc="Anfrage → Qualifizierung → Routing → Notification → Follow-up Sequenz."
+            title="Landingpage, die Leads liefert"
+            desc="LP → Tracking → Formular → CRM → Calendly → Follow-up Automatik."
           />
           <Example
-            title="Angebot in Minuten statt Stunden"
-            desc="Formular → Angebotsdraft → Freigabe → Versand → CRM Update."
+            title="Leads werden automatisch qualifiziert"
+            desc="Regeln/Scoring → richtiger Ansprechpartner → Slack/WhatsApp/E-Mail."
           />
           <Example
-            title="Terminprozess ohne Hin-und-Her"
-            desc="Buchung → Bestätigung → Reminder → Nachfassen bei Nicht-Erscheinen."
+            title="Sales-Prozess ohne Chaos"
+            desc="Pipeline + Aufgaben + Erinnerungen + Angebotsdrafts – alles nachvollziehbar."
           />
         </div>
       </section>
@@ -254,7 +258,7 @@ export default function HomePage() {
       <section id="kontakt" className="mx-auto max-w-6xl px-6 py-16">
         <div className="rounded-3xl border border-white/10 bg-gradient-to-b from-white/10 to-white/5 p-10">
           <h2 className="text-3xl font-semibold tracking-tight">
-            Lass uns <span className="text-[#2EE9FF]">1 Prozess</span> automatisieren – dann entscheidest du weiter.
+            Lass uns <span className="text-[#2EE9FF]">dein Lead-System</span> bauen – und du entscheidest danach weiter.
           </h2>
           <p className="mt-3 max-w-2xl text-sm leading-6 text-white/70">
             Kostenloser Call. Klare Empfehlung. Keine Verpflichtung.
@@ -262,7 +266,7 @@ export default function HomePage() {
 
           <div className="mt-7 flex flex-wrap gap-3">
             <a
-              href=https://calendly.com/seoid/new-meeting
+              href={CALENDLY_URL}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center justify-center rounded-2xl bg-[#2EE9FF] px-6 py-3 text-sm font-semibold text-[#071225] shadow-sm transition hover:brightness-110"
@@ -273,7 +277,7 @@ export default function HomePage() {
               href="#loesungen"
               className="inline-flex items-center justify-center rounded-2xl border border-white/10 bg-white/5 px-6 py-3 text-sm font-semibold text-white/90 transition hover:bg-white/10"
             >
-              Erst Lösungen ansehen
+              Leistungen ansehen
             </a>
           </div>
         </div>
@@ -337,3 +341,4 @@ function Example({ title, desc }: { title: string; desc: string }) {
     </div>
   );
 }
+```
