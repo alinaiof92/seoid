@@ -6,10 +6,12 @@ export default function HomePage() {
   return (
     <main className="min-h-screen bg-[#071225] text-white">
       <header className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
-        <div className="flex items-center gap-3">
-          <div className="h-9 w-9 rounded-2xl border border-white/10 bg-white/5" />
-          <span className="text-lg font-semibold tracking-tight">SEOID</span>
-        </div>
+        <div className="flex items-baseline gap-3">
+  <span className="text-lg font-semibold tracking-tight">SEOID</span>
+  <span className="hidden text-xs text-white/50 md:inline">
+    Systems • Engineering • Operations • Intelligence • Delivery
+  </span>
+</div>
 
         <nav className="hidden items-center gap-6 text-sm text-white/70 md:flex">
           <a className="hover:text-white" href="#loesungen">Leistungen</a>
