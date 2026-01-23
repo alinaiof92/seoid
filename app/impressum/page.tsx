@@ -14,30 +14,25 @@ export default function ImpressumPage() {
 
         <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
           <p className="font-medium text-slate-100">SEOID</p>
-          <p>[Firmenname / Betreibername]</p>
-          <p>[Straße Hausnr.]</p>
-          <p>[PLZ Ort]</p>
-          <p>[Land]</p>
+          <p>IT & Automation Services</p>
+          <p>Kaiserleistraße 51</p>
+          <p>63067 Offenbach</p>
+          <p>Deutschland</p>
 
           <div className="mt-4">
             <p className="font-medium text-slate-100">Kontakt</p>
-            <p>E-Mail: [email@domain.de]</p>
-            <p>Telefon: [+49 …] (optional, aber empfohlen)</p>
+            <p>E-Mail: info[at]seoid.de</p>
           </div>
 
-          <div className="mt-4">
-            <p className="font-medium text-slate-100">Vertreten durch</p>
-            <p>[Name der vertretungsberechtigten Person, falls Firma]</p>
-          </div>
 
           <div className="mt-4">
             <p className="font-medium text-slate-100">Registereintrag</p>
-            <p>[Handelsregister, Registernummer, Registergericht] (falls vorhanden)</p>
+            <p>[Handelsregister, Registernummer, Registergericht] beantragt</p>
           </div>
 
           <div className="mt-4">
             <p className="font-medium text-slate-100">Umsatzsteuer</p>
-            <p>USt-IdNr.: [DE…] (falls vorhanden)</p>
+            <p>USt-IdNr.: [beantrgt] (falls vorhanden)</p>
           </div>
         </div>
 
