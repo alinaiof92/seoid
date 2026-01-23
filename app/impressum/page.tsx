@@ -9,7 +9,7 @@ export default function ImpressumPage() {
 
       <section className="mt-8 space-y-4 text-sm leading-6 text-slate-200/90">
         <p className="text-slate-300">
-          Angaben gemäß § 5 DDG und § 18 MStV.
+          Angaben gemäß § 5 TMG Einzelunternehmen
         </p>
 
         <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
@@ -32,7 +32,7 @@ export default function ImpressumPage() {
 
           <div className="mt-4">
             <p className="font-medium text-slate-100">Umsatzsteuer</p>
-            <p>USt-IdNr.: [beantrgt] (falls vorhanden)</p>
+            <p>USt-IdNr.: [beantrgt]</p>
           </div>
         </div>
 
