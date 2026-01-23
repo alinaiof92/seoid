@@ -1,7 +1,7 @@
 // app/page.tsx
 import Link from "next/link";
 
-const CALENDLY_URL = "https://calendly.com/DEINNAME/prozess-check"; // <-- ändern
+const CALENDLY_URL = "https://calendly.com/seoid/new-meeting"; // <-- ändern
 
 export default function HomePage() {
   return (
@@ -37,7 +37,7 @@ export default function HomePage() {
 
         <div className="flex items-center gap-3">
           <a
-            href={CALENDLY_URL}
+            href=https://calendly.com/seoid/new-meeting
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center justify-center rounded-2xl bg-[#2EE9FF] px-4 py-2 text-sm font-semibold text-[#071225] shadow-sm transition hover:brightness-110"
@@ -68,7 +68,7 @@ export default function HomePage() {
 
             <div className="mt-7 flex flex-wrap gap-3">
               <a
-                href={CALENDLY_URL}
+                href=https://calendly.com/seoid/new-meeting
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center justify-center rounded-2xl bg-[#2EE9FF] px-5 py-3 text-sm font-semibold text-[#071225] shadow-sm transition hover:brightness-110"
@@ -216,7 +216,7 @@ export default function HomePage() {
               Fokus: <span className="text-white">1 Prozess</span> automatisieren, der sofort spürbar Zeit spart.
             </p>
             <a
-              href={CALENDLY_URL}
+              href=https://calendly.com/seoid/new-meeting
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center justify-center rounded-2xl bg-[#2EE9FF] px-5 py-3 text-sm font-semibold text-[#071225] shadow-sm transition hover:brightness-110"
@@ -262,7 +262,7 @@ export default function HomePage() {
 
           <div className="mt-7 flex flex-wrap gap-3">
             <a
-              href={CALENDLY_URL}
+              href=https://calendly.com/seoid/new-meeting
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center justify-center rounded-2xl bg-[#2EE9FF] px-6 py-3 text-sm font-semibold text-[#071225] shadow-sm transition hover:brightness-110"
