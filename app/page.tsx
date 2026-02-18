@@ -99,10 +99,10 @@ export default function HomePage() {
       <section id="kontakt" className="mx-auto max-w-6xl px-6 py-16">
         <div className="rounded-3xl border border-white/10 bg-white/5 p-10">
           <h2 className="text-3xl font-semibold tracking-tight">
-            Kostenloser Prozess-Check – danach entscheidest du weiter.
+            Kostenloser Prozess-Check – danach entscheiden Sie weiter.
           </h2>
           <p className="mt-3 max-w-2xl text-sm leading-6 text-white/70">
-            Klarer Plan, schneller ROI, kein Gelaber.
+            Klarer Plan, schneller ROI, kein Gelaber. More than 10 Years Experience.
           </p>
           <div className="mt-7">
             <a
