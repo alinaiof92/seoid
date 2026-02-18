@@ -14,25 +14,19 @@ export default function ImpressumPage() {
 
         <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
           <p className="font-medium text-slate-100">SEOID</p>
-          <p>IT & Automation Services</p>
+          <p>IT & Automation Services</p><p>- Ali Naiof</p>
           <p>Kaiserleistraße 51</p>
           <p>63067 Offenbach</p>
           <p>Deutschland</p>
 
           <div className="mt-4">
             <p className="font-medium text-slate-100">Kontakt</p>
-            <p>E-Mail: info[at]seoid.de</p>
-          </div>
-
-
-          <div className="mt-4">
-            <p className="font-medium text-slate-100">Registereintrag</p>
-            <p>[Handelsregister, Registernummer, Registergericht] beantragt</p>
+            <p>E-Mail: team[at]seoid.de</p>
           </div>
 
           <div className="mt-4">
             <p className="font-medium text-slate-100">Umsatzsteuer</p>
-            <p>USt-IdNr.: [beantrgt]</p>
+            <p>USt-IdNr.: 27/360/64199 </p>
           </div>
         </div>
 
